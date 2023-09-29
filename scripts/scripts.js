@@ -250,6 +250,7 @@ async function loadLazy(doc) {
     if (window.hlx.experiment) {
       const experimentation = await import(`${window.hlx.codeBasePath}/tools/preview/experimentation.js`);
       experimentation.default();
+      import('../../tools/genai/index.js');
     }
   }
 
